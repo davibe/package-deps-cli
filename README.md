@@ -4,8 +4,14 @@ README
 A cli tool to list package.json dependencies in [package]@[version] form
 
 
-Example
+Install
 -------
+
+    npm install -g package-deps-cli
+
+
+Usage example
+-------------
 
     $ package-deps-cli
     yargs@^3.23.0
