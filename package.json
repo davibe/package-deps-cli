@@ -4,7 +4,7 @@
   "description": "A cli tool to list package.json dependencies in <package>@<version> form",
   "main": "lib/main.js",
   "bin": {
-    "package-deps": "lib/bin.js"
+    "package-deps-cli": "lib/bin.js"
   },
   "engines": {
     "node": "*"
