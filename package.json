@@ -1,0 +1,31 @@
+{
+  "name": "package-deps-cli",
+  "version": "0.1.0",
+  "description": "A cli tool to list package.json dependencies in <package>@<version> form",
+  "main": "lib/main.js",
+  "bin": {
+    "package-deps": "lib/bin.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "./node_modules/.bin/coffee -b -c -o lib src; echo '#!/usr/bin/env node' | cat - lib/main.js > lib/bin.js"
+  },
+  "keywords": [
+    "package",
+    "json",
+    "npm",
+    "node",
+    "cli"
+  ],
+  "author": "Davide Bertola",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^3.23.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
+  }
+}
