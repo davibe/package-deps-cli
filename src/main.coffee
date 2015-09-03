@@ -9,9 +9,10 @@ argv = require('yargs')
   .argv
 
 prefix = "./"
-if argv._.length == 1 then prefix = argv[0]
+if argv._.length == 1 then prefix = argv._[0]
 
 fs.readFile path.join(prefix, 'package.json'), 'utf-8', (e, res) ->
+  if e then return console.error e
   json = JSON.parse res
   for p, v of json.dependencies
     console.log "%s@%s", p, v
