@@ -1,6 +1,6 @@
 {
   "name": "package-deps-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cli tool to list package.json dependencies in <package>@<version> form",
   "main": "lib/main.js",
   "bin": {
