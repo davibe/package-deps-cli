@@ -1,24 +1,24 @@
 README
 ------
 
-A cli tool to list package.json dependencies in <package>@<version> form
+A cli tool to list package.json dependencies in [package]@[version] form
 
 
 Example
 -------
 
-  $ package-deps-cli
-  yargs@^3.23.0
+    $ package-deps-cli
+    yargs@^3.23.0
 
-  $ package-deps-cli --dev
-  yargs@^3.23.0
-  coffee-script@^1.9.3
+    $ package-deps-cli --dev
+    yargs@^3.23.0
+    coffee-script@^1.9.3
 
 
 Why
 ---
 
-I deploy my node.js based application using docker. This tool allows me to install
+I deploy my node.js based applications using docker. This tool allows me to install
 dependencies globally which would not be possible using npm. The result looks 
 like this
 
